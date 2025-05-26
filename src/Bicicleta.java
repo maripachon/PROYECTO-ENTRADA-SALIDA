@@ -1,4 +1,16 @@
-package PACKAGE_NAME;
+public class Bicicleta extends Vehiculo implements VehiculoConSerial {
+    private String serial;
 
-public class Bicicleta {
+    public Bicicleta(Persona persona, String color, String serial) {
+        super(persona, color);
+        this.serial = serial;
+    }
+
+    public String getSerial() {
+        return serial;
+    }
+
+    public void setSerial(String serial) {
+        this.serial = serial;
+    }
 }
